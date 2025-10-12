@@ -1,0 +1,62 @@
+/* styles-explain.css
+
+A beginner-friendly stylesheet that explains the main page styles used in the site.
+The pages still use Tailwind utilities for layout, but this file mirrors the most
+important rules in plain CSS and includes comments that map back to Tailwind classes.
+
+Open this file in your editor to learn how the look is constructed.
+*/
+
+/* Page base */
+body {
+  background: #f8fafc; /* bg-gray-50 */
+  color: #1f2937; /* text-gray-800 */
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  margin: 0;
+}
+
+/* Header area */
+.header {
+  background: #2563eb; /* bg-blue-600 */
+  color: white;
+  padding: 1rem; /* p-4 */
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+.header h1 { font-size: 1.875rem; font-weight: 700; margin: 0 0 0.5rem 0; }
+.header nav ul { display:flex; gap:1rem; list-style:none; padding:0; margin:0; }
+
+/* Centered content card */
+.card {
+  max-width: 42rem; /* max-w-2xl */
+  margin: 2rem auto 0 auto; /* mx-auto + mt-8 */
+  background: white; /* bg-white */
+  padding: 1.5rem; /* p-6 */
+  border-radius: 0.5rem; /* rounded */
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06); /* shadow */
+}
+
+/* Headings */
+.h2 { font-size: 1.25rem; font-weight:600; color:#1d4ed8; margin-bottom:1rem; }
+.h3 { font-size: 1.125rem; font-weight:700; margin-bottom:0.5rem; }
+
+/* Form controls */
+.input, textarea, select { width:100%; padding:0.5rem 0.75rem; border:1px solid #d1d5db; border-radius:0.375rem; box-sizing:border-box; }
+.input:focus, textarea:focus, select:focus { box-shadow: 0 0 0 4px rgba(59,130,246,0.12); outline:none; }
+
+/* Buttons */
+.btn { border-radius:0.375rem; padding:0.5rem 1rem; cursor:pointer; }
+.btn-primary { background:#2563eb; color:white; border:none; }
+.btn-secondary { background:#e5e7eb; color:#111827; border:none; }
+
+/* Tables */
+.table { width:100%; border-collapse:collapse; background:white; }
+.table th, .table td { padding:0.5rem; border-top:1px solid #e5e7eb; text-align:left; }
+.table thead { background:#f3f4f6; }
+
+/* Small helpers used in the examples */
+.center { margin-left:auto; margin-right:auto; }
+.text-blue { color:#2563eb; }
+.mt-8 { margin-top:2rem; }
+
+/* Responsive example: larger container on wider screens */
+@media (min-width: 640px) { .container-lg { max-width: 64rem; } }
